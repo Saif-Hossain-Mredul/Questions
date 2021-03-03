@@ -46,7 +46,36 @@ body .section-center .question .question-header {
           justify-content: space-between;
 }
 
+body .section-center .question .question-header .question-title {
+  font-size: 1.5rem;
+  word-spacing: 0.3rem;
+  letter-spacing: 0.2rem;
+}
+
+body .section-center .question .question-header .question-button {
+  border: none;
+  background: transparent;
+  -webkit-transition: all;
+  transition: all;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  display: inline-block;
+}
+
+body .section-center .question .question-header .question-button span {
+  font-size: 2rem;
+}
+
+body .section-center .question .question-header .question-button:hover {
+  -webkit-transform: rotateZ(90deg);
+          transform: rotateZ(90deg);
+}
+
 body .section-center .question .question-text {
   display: none;
+}
+
+body .section-center .show-text {
+  display: block;
 }
 /*# sourceMappingURL=main.css.map */

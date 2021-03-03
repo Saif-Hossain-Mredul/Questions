@@ -28,12 +28,38 @@ body {
 
 			.question-header {
 				display: flex;
-				justify-content: space-between;
+                justify-content: space-between;
+                
+                .question-title {
+                    font-size: 1.5rem;
+                    word-spacing: 0.3rem;
+                    letter-spacing: 0.2rem;
+                }
+
+                .question-button {
+                    border: none;
+                    background: transparent;  
+                    transition: all;
+                    transition-duration: 1s;
+                    display: inline-block; 
+
+                    span {
+                        font-size: 2rem;
+                    }
+
+                    &:hover {
+                        transform: rotateZ(90deg);
+                    }
+                }
 			}
 
 			.question-text {
 				display: none;
 			}
-		}
+        } 
+        
+        .show-text {
+            display: block;
+        }
 	}
 }
