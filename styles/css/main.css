@@ -78,7 +78,7 @@ body .section-center .question .question-header .question-button:hover {
 }
 
 body .section-center .question .question-header .question-button:focus {
-  border: none;
+  outline: none;
 }
 
 body .section-center .question .question-text {
