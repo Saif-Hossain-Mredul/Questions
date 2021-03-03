@@ -31,7 +31,7 @@ body {
                 justify-content: space-between;
                 
                 .question-title {
-                    font-size: 1.5rem;
+                    font-size: 1.7rem;
                     word-spacing: 0.3rem;
                     letter-spacing: 0.2rem;
                 }
@@ -41,25 +41,47 @@ body {
                     background: transparent;  
                     transition: all;
                     transition-duration: 1s;
-                    display: inline-block; 
+                    display: inline-block;  
+                    cursor: pointer;
 
                     span {
                         font-size: 2rem;
                     }
 
+                    .minus-icon {
+                        display: none;
+                    }
+
                     &:hover {
                         transform: rotateZ(90deg);
+                    } 
+                    &:focus {
+                        border: none;
                     }
                 }
 			}
 
 			.question-text {
-				display: none;
+                font-size: 1.45rem;
+                border-top: 1px solid grey; 
+                margin-top: 1rem;
+                padding-top: 1rem; 
+                display: none;
 			}
         } 
         
         .show-text {
-            display: block;
+            .minus-icon {
+                display: inline;
+            }
+
+            .question-text {
+                display: block;
+            }
+
+            .plus-icon {
+                display: none;
+            }
         }
 	}
 }
