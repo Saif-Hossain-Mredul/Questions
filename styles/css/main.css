@@ -37,6 +37,10 @@ body .section-center .question {
   border-radius: 5px;
 }
 
+body .section-center .question .minus-icon {
+  display: none;
+}
+
 body .section-center .question .question-header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -57,18 +61,14 @@ body .section-center .question .question-header .question-button {
   background: transparent;
   -webkit-transition: all;
   transition: all;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
   display: inline-block;
   cursor: pointer;
 }
 
 body .section-center .question .question-header .question-button span {
   font-size: 2rem;
-}
-
-body .section-center .question .question-header .question-button .minus-icon {
-  display: none;
 }
 
 body .section-center .question .question-header .question-button:hover {

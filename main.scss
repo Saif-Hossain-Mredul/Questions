@@ -26,62 +26,62 @@ body {
 			width: 560px;
 			border-radius: 5px;
 
+			.minus-icon {
+				display: none;
+			}
+
 			.question-header {
 				display: flex;
-                justify-content: space-between;
-                
-                .question-title {
-                    font-size: 1.7rem;
-                    word-spacing: 0.3rem;
-                    letter-spacing: 0.2rem;
-                }
+				justify-content: space-between;
 
-                .question-button {
-                    border: none;
-                    background: transparent;  
-                    transition: all;
-                    transition-duration: 1s;
-                    display: inline-block;  
-                    cursor: pointer;
+				.question-title {
+					font-size: 1.7rem;
+					word-spacing: 0.3rem;
+					letter-spacing: 0.2rem;
+				}
 
-                    span {
-                        font-size: 2rem;
-                    }
+				.question-button {
+					border: none;
+					background: transparent;
+					transition: all;
+					transition-duration: 0.7s;
+					display: inline-block;
+					cursor: pointer;
 
-                    .minus-icon {
-                        display: none;
-                    }
+					span {
+						font-size: 2rem;
+					}
 
-                    &:hover {
-                        transform: rotateZ(90deg);
-                    } 
-                    &:focus {
-                        border: none;
-                    }
-                }
+					&:hover {
+						transform: rotateZ(90deg);
+					}
+					&:focus {
+						border: none;
+					}
+				}
 			}
 
 			.question-text {
-                font-size: 1.45rem;
-                border-top: 1px solid grey; 
-                margin-top: 1rem;
-                padding-top: 1rem; 
-                display: none;
+				font-size: 1.45rem;
+				border-top: 1px solid grey;
+				margin-top: 1rem;
+				padding-top: 1rem;
+				display: none;
 			}
-        } 
-        
-        .show-text {
-            .minus-icon {
-                display: inline;
-            }
+		}
 
-            .question-text {
-                display: block;
-            }
+		.show-text {
+			.minus-icon {
+				display: inline;
+			}
 
-            .plus-icon {
-                display: none;
-            }
-        }
+			.question-text {
+				display: block;
+			}
+
+			.plus-icon {
+				display: none;
+			}
+		}
 	}
 }
